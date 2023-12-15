@@ -23,7 +23,7 @@ const ProductItem = ({product}: ProductProps) => {
           <Text style={styles.originalPrice}>₹ {product.originalPrice}</Text>
           <Text style={styles.discountPrice}>₹ {product.discountPrice}</Text>
           <Text style={styles.offerPercentage}>
-            % {product.originalPrice} off
+            {product.offerPercentage}% off
           </Text>
         </View>
       </View>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   name: {
     marginBottom: 4,
-
+    color: '#000000',
     fontSize: 15,
     fontWeight: '500',
   },
